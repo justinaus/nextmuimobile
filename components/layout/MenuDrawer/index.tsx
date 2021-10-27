@@ -36,8 +36,8 @@ export default function MenuDrawer() {
           </Link>
         </li>
         <li>
-          <Link href="/posts">
-            <a>Posts</a>
+          <Link href="/mypage">
+            <a>My Page</a>
           </Link>
         </li>
       </ul>
