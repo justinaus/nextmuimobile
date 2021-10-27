@@ -5,6 +5,7 @@ import Head from 'next/head';
 import React, { useMemo } from 'react';
 
 import ErrorBox from '../../components/common/ErrorBox';
+import Reviews from '../../components/reviews/Reviews';
 import { IPhoto } from '../../interfaces/photo.interface';
 import http from '../../utils/http';
 
@@ -57,7 +58,7 @@ export default function Photo({ data }: Props) {
             <Typography variant="h6" marginBottom={1}>
               {title}
             </Typography>
-            {/* <Reviews /> */}
+            <Reviews />
           </>
         ) : (
           <ErrorBox />
