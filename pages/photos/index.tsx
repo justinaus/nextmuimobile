@@ -4,6 +4,7 @@ import { GetServerSidePropsContext } from 'next';
 import Head from 'next/head';
 import React from 'react';
 
+import ErrorBox from '../../components/common/ErrorBox';
 import PhotoList from '../../components/photos/PhotoList';
 import { IPhoto } from '../../interfaces/photo.interface';
 import http from '../../utils/http';
@@ -45,15 +46,7 @@ export default function Photos({ datas }: Props) {
         <meta name="description" content="Photos" />
       </Head>
       <Box padding={2}>
-        {datas ? (
-          <PhotoList datas={datas} />
-        ) : (
-          <>
-            정보를 정상적으로 불러오지 못했습니다.
-            <br />
-            잠시 후 다시 시도해주세요.
-          </>
-        )}
+        {datas ? <PhotoList datas={datas} /> : <ErrorBox />}
       </Box>
     </>
   );
