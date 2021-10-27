@@ -6,7 +6,7 @@ import { BottomNavigation, BottomNavigationAction, Paper } from '@mui/material';
 import React, { useCallback } from 'react';
 import { useRecoilState } from 'recoil';
 
-import { menuOpenState } from '../../../pages/recoil/menu';
+import { menuOpenState } from '../../../recoil/menu';
 
 export default function BottomNav() {
   const [menuOpen, setMenuOpen] = useRecoilState(menuOpenState);

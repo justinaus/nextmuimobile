@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 
-import { menuOpenState } from '../../../pages/recoil/menu';
+import { menuOpenState } from '../../../recoil/menu';
 
 export default function MenuDrawer() {
   const [menuOpen, setMenuOpen] = useRecoilState(menuOpenState);
