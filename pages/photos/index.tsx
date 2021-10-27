@@ -5,7 +5,7 @@ import Head from 'next/head';
 import React from 'react';
 
 import PhotoList from '../../components/photos/PhotoList';
-import { IPhotos } from '../../interfaces/photo.interface';
+import { IPhoto } from '../../interfaces/photo.interface';
 import http from '../../utils/http';
 
 async function getData() {
@@ -33,7 +33,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 }
 
 interface Props {
-  datas: IPhotos[] | null;
+  datas: IPhoto[] | null;
 }
 
 export default function Photos({ datas }: Props) {
