@@ -27,7 +27,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
           <meta name="theme-color" content={theme.palette.primary.main} />
-          <meta name="description" content="Next.js Mobile" />
+          <meta name="description" content="nextmuimobile" />
         </Head>
         <body>
           <Main />
