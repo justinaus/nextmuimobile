@@ -1,4 +1,3 @@
-import { CssBaseline } from '@mui/material';
 import { Box } from '@mui/system';
 import { GetServerSidePropsContext } from 'next';
 import Head from 'next/head';
@@ -40,7 +39,6 @@ interface Props {
 export default function Photos({ datas }: Props) {
   return (
     <>
-      <CssBaseline />
       <Head>
         <title>Photos</title>
         <meta name="description" content="Photos" />
